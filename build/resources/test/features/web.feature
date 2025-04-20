@@ -45,9 +45,9 @@ Feature:Test Automation WEB On https://www.demoblaze.com/
     When user click Place order button
     Then user will be directed to fill out the following data form
       | Name    | iqbalgunawan     |
-      | Country | Bengkulu         |
-      | City    | Bengkulu         |
-      | Card    | 1234567890123456 |
+      | Country | Indonesia        |
+      | City    | Jakarta          |
+      | Card    | 123456789        |
       | Month   | 05               |
       | Year    | 2025             |
     Then user click Purchase button
