@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Automation Web" tests="5" skipped="0" failures="3" errors="0" timestamp="2025-04-09T05:22:44" hostname="WIN-UM4P54D4RF6" time="41.281">
+  <properties/>
+  <testcase name="Test Login normal web" classname="Test Automation Web" time="6.522"/>
+  <testcase name="Test login with username and password invalid" classname="Test Automation Web" time="7.586"/>
+  <testcase name="Test next page and previous normal web" classname="Test Automation Web" time="8.713">
+    <failure message="org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}&#10;  (Session info: chrome=135.0.7049.42): User does not exist.&#10;Build info: version: '4.29.0', revision: '5fc1ec94cb'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c7d2ae9ed39b0523e237c3fc730c0ede, findElement {value=next2, using=id}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51283/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c7d2ae9ed39b0523e237c3fc730c0ede" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=135.0.7049.42): User does not exist.
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7d2ae9ed39b0523e237c3fc730c0ede, findElement {value=next2, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51283/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7d2ae9ed39b0523e237c3fc730c0ede
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at app//pages.ProductPage.buttonNextPage(ProductPage.java:30)
+	at app//stepDef.WebStep.userClickNextPage(WebStep.java:58)
+	at ✽.user click next page(file:///D:/coding/hasil%20coding/FinalJayjay-Iqbal/FinalJayjay_Iqbal/src/test/resources/features/web.feature:30)
+</failure>
+  </testcase>
+  <testcase name="Test detail product and add to cart normal" classname="Test Automation Web" time="9.923">
+    <failure message="org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}&#10;  (Session info: chrome=135.0.7049.42): User does not exist.&#10;Build info: version: '4.29.0', revision: '5fc1ec94cb'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fcdcc9061bdba5e7876ca3d551f89adb, findElement {value=//a[.='Samsung galaxy s6']/parent::h4/parent::div/parent::div/a, using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51305/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fcdcc9061bdba5e7876ca3d551f89adb" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=135.0.7049.42): User does not exist.
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fcdcc9061bdba5e7876ca3d551f89adb, findElement {value=//a[.='Samsung galaxy s6']/parent::h4/parent::div/parent::div/a, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51305/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fcdcc9061bdba5e7876ca3d551f89adb
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at app//pages.ProductPage.clickItem(ProductPage.java:25)
+	at app//stepDef.WebStep.clickDetailItem(WebStep.java:83)
+	at ✽.click detail item &quot;Samsung galaxy s6&quot;(file:///D:/coding/hasil%20coding/FinalJayjay-Iqbal/FinalJayjay_Iqbal/src/test/resources/features/web.feature:43)
+</failure>
+  </testcase>
+  <testcase name="Test detail categories" classname="Test Automation Web" time="8.537">
+    <failure message="org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}&#10;  (Session info: chrome=135.0.7049.42): User does not exist.&#10;Build info: version: '4.29.0', revision: '5fc1ec94cb'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [52cd9468643fc1b4ab501fca9679ecbb, findElement {value=//a[@onclick=&quot;byCat('phone')&quot;], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51332/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 52cd9468643fc1b4ab501fca9679ecbb" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=135.0.7049.42): User does not exist.
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52cd9468643fc1b4ab501fca9679ecbb, findElement {value=//a[@onclick=&quot;byCat('phone')&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51332/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52cd9468643fc1b4ab501fca9679ecbb
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at app//pages.ProductPage.assertPhonesButton(ProductPage.java:52)
+	at app//stepDef.WebStep.userClickPhonesButton(WebStep.java:77)
+	at ✽.user click phones button(file:///D:/coding/hasil%20coding/FinalJayjay-Iqbal/FinalJayjay_Iqbal/src/test/resources/features/web.feature:54)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+@web
+Scenario: Test Login normal web                       ?[90m# src/test/resources/features/web.feature:4?[0m
+  ?[32mGiven ?[0m?[32m: open web login page?[0m                         ?[90m# stepDef.WebStep.openWebLoginPage()?[0m
+  ?[32mAnd ?[0m?[32muser click button login?[0m                         ?[90m# stepDef.WebStep.userClickButtonLogin()?[0m
+  ?[32mAnd ?[0m?[32muser input username ?[0m?[32m?[1m"iqbalgunawan403@gmail.com"?[0m ?[90m# stepDef.WebStep.userInputUsername(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser input password ?[0m?[32m?[1m"14Februari"?[0m                ?[90m# stepDef.WebStep.userInputPassword(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser click login button?[0m                         ?[90m# stepDef.WebStep.userClickLoginButton()?[0m
+  ?[32mAnd ?[0m?[32muser will see icon name of user?[0m                 ?[90m# stepDef.WebStep.userWillSeeIconNameOfUser()?[0m
+
+@web
+Scenario: Test login with username and password invalid                                              ?[90m# src/test/resources/features/web.feature:13?[0m
+  ?[32mGiven ?[0m?[32m: open web login page?[0m                                                                        ?[90m# stepDef.WebStep.openWebLoginPage()?[0m
+  ?[32mAnd ?[0m?[32muser click button login?[0m                                                                        ?[90m# stepDef.WebStep.userClickButtonLogin()?[0m
+  ?[32mAnd ?[0m?[32muser input username ?[0m?[32m?[1m"satusatu"?[0m                                                                 ?[90m# stepDef.WebStep.userInputUsername(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser input password ?[0m?[32m?[1m"12345678rr"?[0m                                                               ?[90m# stepDef.WebStep.userInputPassword(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser click login button?[0m                                                                        ?[90m# stepDef.WebStep.userClickLoginButton()?[0m
+Alert text: Wrong password.
+  ?[32mAnd ?[0m?[32muser on the page and will see error message ?[0m?[32m?[1m"www.demoblaze.com menyatakan user does not exist"?[0m ?[90m# stepDef.WebStep.userOnThePageAndWillSeeErrorMessage(java.lang.String)?[0m
+
+@web
+Scenario: Test next page and previous normal web      ?[90m# src/test/resources/features/web.feature:23?[0m
+  ?[32mGiven ?[0m?[32m: open web login page?[0m                         ?[90m# stepDef.WebStep.openWebLoginPage()?[0m
+  ?[32mAnd ?[0m?[32muser click button login?[0m                         ?[90m# stepDef.WebStep.userClickButtonLogin()?[0m
+  ?[32mAnd ?[0m?[32muser input username ?[0m?[32m?[1m"iqbalgunawan403@gmail.com"?[0m ?[90m# stepDef.WebStep.userInputUsername(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser input password ?[0m?[32m?[1m"14Februari"?[0m                ?[90m# stepDef.WebStep.userInputPassword(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser click login button?[0m                         ?[90m# stepDef.WebStep.userClickLoginButton()?[0m
+  ?[32mAnd ?[0m?[32muser will see icon name of user?[0m                 ?[90m# stepDef.WebStep.userWillSeeIconNameOfUser()?[0m
+  ?[31mAnd ?[0m?[31muser click next page?[0m                            ?[90m# stepDef.WebStep.userClickNextPage()?[0m
+      ?[31morg.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=135.0.7049.42): User does not exist.
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7d2ae9ed39b0523e237c3fc730c0ede, findElement {value=next2, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51283/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7d2ae9ed39b0523e237c3fc730c0ede
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.ProductPage.buttonNextPage(ProductPage.java:30)
+	at stepDef.WebStep.userClickNextPage(WebStep.java:58)
+	at ✽.user click next page(file:///D:/coding/hasil%20coding/FinalJayjay-Iqbal/FinalJayjay_Iqbal/src/test/resources/features/web.feature:30)
+?[0m
+  ?[36mAnd ?[0m?[36muser will see button previous page?[0m              ?[90m# stepDef.WebStep.userWillSeeButtonPreviousPage()?[0m
+  ?[36mAnd ?[0m?[36muser click previous page?[0m                        ?[90m# stepDef.WebStep.userClickPreviousPage()?[0m
+
+@web
+Scenario: Test detail product and add to cart normal  ?[90m# src/test/resources/features/web.feature:36?[0m
+  ?[32mGiven ?[0m?[32m: open web login page?[0m                         ?[90m# stepDef.WebStep.openWebLoginPage()?[0m
+  ?[32mAnd ?[0m?[32muser click button login?[0m                         ?[90m# stepDef.WebStep.userClickButtonLogin()?[0m
+  ?[32mAnd ?[0m?[32muser input username ?[0m?[32m?[1m"iqbalgunawan403@gmail.com"?[0m ?[90m# stepDef.WebStep.userInputUsername(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser input password ?[0m?[32m?[1m"14Februari"?[0m                ?[90m# stepDef.WebStep.userInputPassword(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser click login button?[0m                         ?[90m# stepDef.WebStep.userClickLoginButton()?[0m
+  ?[32mAnd ?[0m?[32muser will see icon name of user?[0m                 ?[90m# stepDef.WebStep.userWillSeeIconNameOfUser()?[0m
+  ?[31mAnd ?[0m?[31mclick detail item ?[0m?[31m?[1m"Samsung galaxy s6"?[0m           ?[90m# stepDef.WebStep.clickDetailItem(java.lang.String)?[0m
+      ?[31morg.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=135.0.7049.42): User does not exist.
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fcdcc9061bdba5e7876ca3d551f89adb, findElement {value=//a[.='Samsung galaxy s6']/parent::h4/parent::div/parent::div/a, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51305/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fcdcc9061bdba5e7876ca3d551f89adb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.ProductPage.clickItem(ProductPage.java:25)
+	at stepDef.WebStep.clickDetailItem(WebStep.java:83)
+	at ✽.click detail item "Samsung galaxy s6"(file:///D:/coding/hasil%20coding/FinalJayjay-Iqbal/FinalJayjay_Iqbal/src/test/resources/features/web.feature:43)
+?[0m
+  ?[36mAnd ?[0m?[36mclick  button add to cart?[0m                       ?[90m# stepDef.WebStep.clickButtonAddToCart()?[0m
+
+@web
+Scenario: Test detail categories                      ?[90m# src/test/resources/features/web.feature:47?[0m
+  ?[32mGiven ?[0m?[32m: open web login page?[0m                         ?[90m# stepDef.WebStep.openWebLoginPage()?[0m
+  ?[32mAnd ?[0m?[32muser click button login?[0m                         ?[90m# stepDef.WebStep.userClickButtonLogin()?[0m
+  ?[32mAnd ?[0m?[32muser input username ?[0m?[32m?[1m"iqbalgunawan403@gmail.com"?[0m ?[90m# stepDef.WebStep.userInputUsername(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser input password ?[0m?[32m?[1m"14Februari"?[0m                ?[90m# stepDef.WebStep.userInputPassword(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser click login button?[0m                         ?[90m# stepDef.WebStep.userClickLoginButton()?[0m
+  ?[32mAnd ?[0m?[32muser will see icon name of user?[0m                 ?[90m# stepDef.WebStep.userWillSeeIconNameOfUser()?[0m
+  ?[31mAnd ?[0m?[31muser click phones button?[0m                        ?[90m# stepDef.WebStep.userClickPhonesButton()?[0m
+      ?[31morg.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=135.0.7049.42): User does not exist.
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52cd9468643fc1b4ab501fca9679ecbb, findElement {value=//a[@onclick="byCat('phone')"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51332/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52cd9468643fc1b4ab501fca9679ecbb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.ProductPage.assertPhonesButton(ProductPage.java:52)
+	at stepDef.WebStep.userClickPhonesButton(WebStep.java:77)
+	at ✽.user click phones button(file:///D:/coding/hasil%20coding/FinalJayjay-Iqbal/FinalJayjay_Iqbal/src/test/resources/features/web.feature:54)
+?[0m
+]]></system-out>
+  <system-err><![CDATA[Apr 09, 2025 12:22:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+Apr 09, 2025 12:22:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+Apr 09, 2025 12:23:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+Apr 09, 2025 12:23:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+Apr 09, 2025 12:23:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+]]></system-err>
+</testsuite>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Automation Rest Api" tests="4" skipped="0" failures="1" errors="0" timestamp="2025-04-09T05:22:19" hostname="WIN-UM4P54D4RF6" time="25.685">
+  <properties/>
+  <testcase name="Get User By ID normal" classname="Test Automation Rest Api" time="8.368">
+    <failure message="org.opentest4j.AssertionFailedError: &#13;&#10;expected: 200&#13;&#10; but was: 404" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: 200
+ but was: 404
+	at app//pages.ApiPage.validationStatusCodeIsEquals(ApiPage.java:50)
+	at app//stepDef.ApiStep.validationStatusCodeIsEquals(ApiStep.java:25)
+	at ✽.validation status code is equals 200(file:///D:/coding/hasil%20coding/FinalJayjay-Iqbal/FinalJayjay_Iqbal/src/test/resources/features/api.feature:7)
+</failure>
+  </testcase>
+  <testcase name="Test create new user normal" classname="Test Automation Rest Api" time="6.803"/>
+  <testcase name="Test delete user normal" classname="Test Automation Rest Api" time="5.273"/>
+  <testcase name="Test update user normal" classname="Test Automation Rest Api" time="5.241"/>
+  <system-out><![CDATA[
+@api
+Scenario: Get User By ID normal                                              ?[90m# src/test/resources/features/api.feature:4?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m"GET_USER_BY_ID"?[0m                               ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api get user by id?[0m                                                 ?[90m# stepDef.ApiStep.hitApiGetUserById()?[0m
+  ?[31mThen ?[0m?[31mvalidation status code is equals ?[0m?[31m?[1m200?[0m                                  ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+      ?[31morg.opentest4j.AssertionFailedError: 
+expected: 200
+ but was: 404
+	at pages.ApiPage.validationStatusCodeIsEquals(ApiPage.java:50)
+	at stepDef.ApiStep.validationStatusCodeIsEquals(ApiStep.java:25)
+	at ✽.validation status code is equals 200(file:///D:/coding/hasil%20coding/FinalJayjay-Iqbal/FinalJayjay_Iqbal/src/test/resources/features/api.feature:7)
+?[0m
+  ?[36mThen ?[0m?[36mvalidation response body get user by id?[0m                               ?[90m# stepDef.ApiStep.validationResponseBodyGetUserById()?[0m
+  ?[36mThen ?[0m?[36mvalidation response json with JSONSchema ?[0m?[36m?[1m"get_user_by_id_normal.json"?[0m ?[90m# stepDef.ApiStep.validationResponseJsonWithJSONSchema(java.lang.String)?[0m
+
+@api
+Scenario: Test create new user normal                                              ?[90m# src/test/resources/features/api.feature:12?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m"CREATE_USER"?[0m                                        ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api post create new user?[0m                                                 ?[90m# stepDef.ApiStep.hitApiPostCreateNewUser()?[0m
+  ?[32mThen ?[0m?[32mvalidation status code is equals ?[0m?[32m?[1m200?[0m                                        ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+  ?[32mThen ?[0m?[32mvalidation response body post create new user?[0m                               ?[90m# stepDef.ApiStep.validationResponseBodyPostCreateNewUser()?[0m
+  ?[32mThen ?[0m?[32mvalidation response json with JSONSchema ?[0m?[32m?[1m"post_create_new_user_normal.json"?[0m ?[90m# stepDef.ApiStep.validationResponseJsonWithJSONSchema(java.lang.String)?[0m
+
+@api
+Scenario: Test delete user normal                    ?[90m# src/test/resources/features/api.feature:20?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m"CREATE_USER"?[0m          ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api post create new user?[0m                   ?[90m# stepDef.ApiStep.hitApiPostCreateNewUser()?[0m
+  ?[32mThen ?[0m?[32mvalidation status code is equals ?[0m?[32m?[1m200?[0m          ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+  ?[32mThen ?[0m?[32mvalidation response body post create new user?[0m ?[90m# stepDef.ApiStep.validationResponseBodyPostCreateNewUser()?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m"DELETE_USER"?[0m          ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api delete new?[0m                             ?[90m# stepDef.ApiStep.hitApiDeleteNew()?[0m
+  ?[32mThen ?[0m?[32mvalidation status code is equals ?[0m?[32m?[1m200?[0m          ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+
+@api
+Scenario: Test update user normal                    ?[90m# src/test/resources/features/api.feature:30?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m"CREATE_USER"?[0m          ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api post create new user?[0m                   ?[90m# stepDef.ApiStep.hitApiPostCreateNewUser()?[0m
+  ?[32mThen ?[0m?[32mvalidation status code is equals ?[0m?[32m?[1m200?[0m          ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+  ?[32mThen ?[0m?[32mvalidation response body post create new user?[0m ?[90m# stepDef.ApiStep.validationResponseBodyPostCreateNewUser()?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m"UPDATE_USER"?[0m          ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api update data?[0m                            ?[90m# stepDef.ApiStep.hitApiUpdateData()?[0m
+  ?[32mThen ?[0m?[32mvalidation status code is equals ?[0m?[32m?[1m200?[0m          ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+  ?[32mThen ?[0m?[32mvalidation response body update user?[0m          ?[90m# stepDef.ApiStep.validationResponseBodyUpdateUser()?[0m
+]]></system-out>
+  <system-err><![CDATA[Apr 09, 2025 12:22:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Apr 09, 2025 12:22:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+Apr 09, 2025 12:22:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+Apr 09, 2025 12:22:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+]]></system-err>
+</testsuite>

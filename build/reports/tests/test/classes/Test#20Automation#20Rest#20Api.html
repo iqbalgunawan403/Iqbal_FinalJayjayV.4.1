@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Test Automation Rest Api</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Test Automation Rest Api</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Test Automation Rest Api</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">25.685s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">75%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Get User By ID normal"></a>
+<h3 class="failures">Get User By ID normal</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: 
+expected: 200
+ but was: 404
+	at app//pages.ApiPage.validationStatusCodeIsEquals(ApiPage.java:50)
+	at app//stepDef.ApiStep.validationStatusCodeIsEquals(ApiStep.java:25)
+	at ✽.validation status code is equals 200(file:///D:/coding/hasil%20coding/FinalJayjay-Iqbal/FinalJayjay_Iqbal/src/test/resources/features/api.feature:7)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Get User By ID normal</td>
+<td class="failures">8.368s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Test create new user normal</td>
+<td class="success">6.803s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test delete user normal</td>
+<td class="success">5.273s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test update user normal</td>
+<td class="success">5.241s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@api
+Scenario: Get User By ID normal                                              ?[90m# src/test/resources/features/api.feature:4?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m&quot;GET_USER_BY_ID&quot;?[0m                               ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api get user by id?[0m                                                 ?[90m# stepDef.ApiStep.hitApiGetUserById()?[0m
+  ?[31mThen ?[0m?[31mvalidation status code is equals ?[0m?[31m?[1m200?[0m                                  ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+      ?[31morg.opentest4j.AssertionFailedError: 
+expected: 200
+ but was: 404
+	at pages.ApiPage.validationStatusCodeIsEquals(ApiPage.java:50)
+	at stepDef.ApiStep.validationStatusCodeIsEquals(ApiStep.java:25)
+	at ✽.validation status code is equals 200(file:///D:/coding/hasil%20coding/FinalJayjay-Iqbal/FinalJayjay_Iqbal/src/test/resources/features/api.feature:7)
+?[0m
+  ?[36mThen ?[0m?[36mvalidation response body get user by id?[0m                               ?[90m# stepDef.ApiStep.validationResponseBodyGetUserById()?[0m
+  ?[36mThen ?[0m?[36mvalidation response json with JSONSchema ?[0m?[36m?[1m&quot;get_user_by_id_normal.json&quot;?[0m ?[90m# stepDef.ApiStep.validationResponseJsonWithJSONSchema(java.lang.String)?[0m
+
+@api
+Scenario: Test create new user normal                                              ?[90m# src/test/resources/features/api.feature:12?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m&quot;CREATE_USER&quot;?[0m                                        ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api post create new user?[0m                                                 ?[90m# stepDef.ApiStep.hitApiPostCreateNewUser()?[0m
+  ?[32mThen ?[0m?[32mvalidation status code is equals ?[0m?[32m?[1m200?[0m                                        ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+  ?[32mThen ?[0m?[32mvalidation response body post create new user?[0m                               ?[90m# stepDef.ApiStep.validationResponseBodyPostCreateNewUser()?[0m
+  ?[32mThen ?[0m?[32mvalidation response json with JSONSchema ?[0m?[32m?[1m&quot;post_create_new_user_normal.json&quot;?[0m ?[90m# stepDef.ApiStep.validationResponseJsonWithJSONSchema(java.lang.String)?[0m
+
+@api
+Scenario: Test delete user normal                    ?[90m# src/test/resources/features/api.feature:20?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m&quot;CREATE_USER&quot;?[0m          ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api post create new user?[0m                   ?[90m# stepDef.ApiStep.hitApiPostCreateNewUser()?[0m
+  ?[32mThen ?[0m?[32mvalidation status code is equals ?[0m?[32m?[1m200?[0m          ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+  ?[32mThen ?[0m?[32mvalidation response body post create new user?[0m ?[90m# stepDef.ApiStep.validationResponseBodyPostCreateNewUser()?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m&quot;DELETE_USER&quot;?[0m          ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api delete new?[0m                             ?[90m# stepDef.ApiStep.hitApiDeleteNew()?[0m
+  ?[32mThen ?[0m?[32mvalidation status code is equals ?[0m?[32m?[1m200?[0m          ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+
+@api
+Scenario: Test update user normal                    ?[90m# src/test/resources/features/api.feature:30?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m&quot;CREATE_USER&quot;?[0m          ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api post create new user?[0m                   ?[90m# stepDef.ApiStep.hitApiPostCreateNewUser()?[0m
+  ?[32mThen ?[0m?[32mvalidation status code is equals ?[0m?[32m?[1m200?[0m          ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+  ?[32mThen ?[0m?[32mvalidation response body post create new user?[0m ?[90m# stepDef.ApiStep.validationResponseBodyPostCreateNewUser()?[0m
+  ?[32mGiven ?[0m?[32mprepare url valid for ?[0m?[32m?[1m&quot;UPDATE_USER&quot;?[0m          ?[90m# stepDef.ApiStep.prepareUrlValidFor(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mhit api update data?[0m                            ?[90m# stepDef.ApiStep.hitApiUpdateData()?[0m
+  ?[32mThen ?[0m?[32mvalidation status code is equals ?[0m?[32m?[1m200?[0m          ?[90m# stepDef.ApiStep.validationStatusCodeIsEquals(int)?[0m
+  ?[32mThen ?[0m?[32mvalidation response body update user?[0m          ?[90m# stepDef.ApiStep.validationResponseBodyUpdateUser()?[0m
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Apr 09, 2025 12:22:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Apr 09, 2025 12:22:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+Apr 09, 2025 12:22:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+Apr 09, 2025 12:22:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 135
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.10</a> at Apr 9, 2025, 12:23:26 PM</p>
+</div>
+</div>
+</body>
+</html>
