@@ -38,7 +38,13 @@ public class Utility {
 
     public void displayPopupLogin(String message) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.alertIsPresent());
+        try {
+            Thread.sleep(5000);
+            wait.until(ExpectedConditions.alertIsPresent());
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         Alert alert = driver.switchTo().alert();
         String actualMessage = alert.getText();
         Assert.assertEquals(message, actualMessage);
