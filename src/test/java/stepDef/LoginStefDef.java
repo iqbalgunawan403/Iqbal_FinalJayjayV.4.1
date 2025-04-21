@@ -33,8 +33,9 @@ public class LoginStefDef {
     }
 
     @When("user click the login button")
-    public void userClickTheLoginButton() {
+    public void userClickTheLoginButton() throws InterruptedException {
         loginPage.clickBtnLogin();
+        Thread.sleep(4000);
     }
 
     @Then("the user should see a welcome greeting")
