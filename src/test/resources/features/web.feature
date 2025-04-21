@@ -1,4 +1,4 @@
-Feature:Test Automation WEB On https://www.demoblaze.com/
+Feature:Test Automation WEB On demoblaze.com
 
   @web
   Scenario: Sign up with new username and password
